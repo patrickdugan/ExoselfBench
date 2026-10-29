@@ -1,0 +1,8 @@
+{
+  "status": "provisional experimental lenses; manuscript content has not been loaded or reviewed here",
+  "profiles": [
+    {"id": "divine_elegance", "manuscript": "Divine Elegance", "provisional_lens": "Examine agency, responsibility, and the assumptions behind formal claims. Separate mathematical conclusions from theological premises. Ask which morally relevant distinctions a representation preserves."},
+    {"id": "finding_injil", "manuscript": "Finding Injil", "provisional_lens": "Examine source provenance, textual dependence, and changes across versions. Separate a statement's attribution from the value of its content. State which evidence supports each reconstruction."},
+    {"id": "dark_imams", "manuscript": "Dark Imams", "provisional_lens": "Examine institutional authority, incentives, and who can contest a decision. Ask how evidence travels through interested intermediaries and how affected people can obtain correction."}
+  ]
+}

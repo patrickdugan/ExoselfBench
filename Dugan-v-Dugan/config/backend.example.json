@@ -1,0 +1,8 @@
+{
+  "command": ["python", "YOUR_LOCAL_DRIVER.py"],
+  "base_model": "SET_MODEL_ID",
+  "base_revision": "SET_IMMUTABLE_REVISION",
+  "timeout_seconds": 180,
+  "adapters": {},
+  "note": "Driver reads one JSON request on stdin, emits one response/usage envelope on stdout. Forward task plus seed and budgets to your model; keep diagnostics on stderr. Adapter entries need sha256 and training_manifest_sha256. Never place credentials here."
+}

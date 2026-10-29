@@ -1,0 +1,8 @@
+{
+  "status": "unbound; fill with reviewed paths and SHA-256 hashes of UTF-8 exports",
+  "sources": {
+    "divine_elegance": {"title": "Divine Elegance", "path": null, "sha256": null, "review_status": "unreviewed"},
+    "finding_injil": {"title": "Finding Injil", "path": null, "sha256": null, "review_status": "unreviewed"},
+    "dark_imams": {"title": "Dark Imams", "path": null, "sha256": null, "review_status": "unreviewed"}
+  }
+}
