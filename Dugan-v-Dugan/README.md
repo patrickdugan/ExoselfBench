@@ -34,7 +34,9 @@ python Dugan-v-Dugan/bench.py run \
   --out Dugan-v-Dugan/.local/rag-seed19
 ```
 
-PowerShell users can put the command on one line. Runs use a fixed output-token cap per turn, a context character cap per retrieved source, and an overall call cap. These units are recorded separately. Reported token usage comes from the driver. The bridge rejects over-budget reported outputs and times out failed processes; the actual model server must enforce generation limits.
+PowerShell users can put the command on one line.
+
+`drivers/openai_compat_driver.py` is a standard-library driver for a loopback OpenAI-compatible server such as `llama-server`. It is configured through `EXOSELF_LLM_URL` and `EXOSELF_LLM_MODEL`, checks the model ID against `/v1/models`, constrains output to the response schema, and refuses adapter arms. `tools/export_text.py` exports a `.docx` or `.pdf` manuscript to UTF-8 text and prints the SHA-256 to enter in `sources.local.json`. Runs use a fixed output-token cap per turn, a context character cap per retrieved source, and an overall call cap. These units are recorded separately. Reported token usage comes from the driver. The bridge rejects over-budget reported outputs and times out failed processes; the actual model server must enforce generation limits.
 
 | Arm | Provisional lens | Retrieved book excerpt | Adapter |
 |---|---|---|---|
